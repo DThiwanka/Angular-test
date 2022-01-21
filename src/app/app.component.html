@@ -1,17 +1,37 @@
-<h1 class="unselect">
-  Variables Got From app.component file <br/><br/>
-  Project -> <a>{{projectName}}</a> <br/>
-  First Name -> {{fname}} <br/>
-  Second Name -> {{sname}} <br/>
-  Quality -> {{rating}}
+<H1>Test {{title}}</H1>
+<app-login></app-login>
 
-</h1> <br/>
+<button (click)="getName('anil')">Click Me To Get Name.</button><br/><br/>
+<button (click)="getNumber(50)">Click Me To Get Number.</button><br/><br/>
+<button (click)="getStatusMassage('Massage Sent Successfully !')">Click To Get Status Massage</button><br/><br/>
+<button (click)="getClg('Button Click event')">Get a warn Massage to Console.</button>
+<hr/>
+<hr/>
+<input type="text" placeholder="Key Up Box" (keyup)="upvaldata('Key Up')"> : Watch The Console Key up 1
+<hr/>
+<input type="text" #box1 placeholder="Key Up Box" (keyup)="upvaldata2(box1.value)"> : Watch The Console Key up 2
+<hr/>
+<input type="text" #box2 placeholder="Key down box" (keydown)="upvaldata(box2.value)"> : Watch The Console Key up 2<br/>
+<br/>
+<input type="text" #box3 placeholder="Blur box" (blur)="upvaldata(box3.value)"> : Watch The Console Unfocus.
+<hr/>
+<input type="text" #box4 placeholder="Input box" (blur)="upvaldata(box4.value)"> : Watch The Console Unfocus.
+<hr/><br/>
 
-<div id="fst">
-  <h2>
-    {{getval()}}
-    <p class="jb">{{89+129}}</p>
-   <a> {{num==100}}</a>
+<h1 (mouseover)="mouseOverData('Mouse Over')">Dulaj Thiwanka Jayawardana</h1>
+<h1 (mouseleave)="mouseOverData('Mouse Leaved')">Click to leave mouse.</h1>
 
-  </h2>
+<input type="text" #namebox placeholder="Enter Name:" name="username" value="Please Enter"/>
+
+<Button (click)="getname(namebox.value || namebox.defaultValue)" >Click Me to Get Value!</Button>
+<h1> Box Value is {{displayName}} </h1>
+<br>
+
+<div class="counterDiv">
+<h1>Counter</h1>
+<button (click)="counterminus(displayvote)"  class="minusbtn">⬇⬇⬇⬇⬇⬇</button>
+<p>Likes Count :{{count}}</p>
+<p>Vote : {{displayvote}}</p>
+<button (click)="counterplus(displayvote)" class="plusbtn">⬆⬆⬆⬆⬆⬆⬆</button>
 </div>
+<app-login></app-login>
