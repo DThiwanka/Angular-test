@@ -1,0 +1,13 @@
+<p>style-binding works!</p>
+
+<h4 [style.color]="'green'" [style.background-color]="bgColor">
+  {{title}} color hardcoded
+</h4>
+
+<h3 [style.color]="color">
+  {{title}} color get from .ts file
+</h3>
+
+<button (click)="updateColor()">
+  Update Color
+</button>

@@ -1,0 +1,35 @@
+<p>compofloop works!</p>
+<div class="counterDiv">
+<p *ngFor="let name of users">
+  <i class="fa fa-signal" aria-hidden="true"></i>
+  Name is :{{name}}<br/>
+</p>
+</div>
+
+<hr/>
+<p *ngFor="let admin of admins">
+  Admin is : {{admin}}<br/>
+</p>
+
+<hr/>
+<p *ngFor="let manager of managers">
+  Admin is : {{manager}}<br/>
+</p>
+
+<h4>Second Loop to get User Details </h4>
+<p *ngFor="let details of userDetails">
+  Details are Name: {{details.name}} |||| Email is: {{details.email}} |||| Phone Number is {{details.phnumber}}
+</p>
+
+<h3>Nested Loop list type</h3>
+<ol *ngFor="let customer of CustomerDetails">
+  <li>{{customer.c_name}}</li>
+  <li>{{customer.address}}</li>
+  <li>{{customer.country}}</li>
+
+  <ul *ngFor="let account of customer.accounts">
+    <li>{{account}}</li>
+
+  </ul>
+
+</ol>
