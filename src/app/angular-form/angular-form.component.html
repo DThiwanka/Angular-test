@@ -1,0 +1,16 @@
+<h3>angular-form works!</h3>
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+  Enter User Name:<br/>
+  <input type="text" ngModel name="user" placeholder="Enter User Name" /><br/>
+  Enter Email:<br/>
+  <input type="email" ngModel name="email" placeholder="Enter Email"/><br/>
+  Enter Password:<br/>
+  <input type="text" ngModel name="password" placeholder="Enter Password"/><br/>
+  <button class="regbtn">Register</button>
+</form>
+
+<ol>
+  <li>User Name: {{userData.user}}</li>
+  <li>Email: {{userData.email}}</li>
+  <li>Password: {{userData.password}}</li>
+</ol>

@@ -6,7 +6,11 @@ import { AppLoginComponent } from './app-login/app-login.component';
 import { Test1Component } from './test1/test1.component';
 import { IfelsecheckComponent } from './ifelsecheck/ifelsecheck.component';
 import { CompofloopComponent } from './compofloop/compofloop.component';
-import { StyleBindingComponent } from './style-binding/style-binding.component'
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { HeaderComponent } from './header/header.component';
+import { AngularFormComponent } from './angular-form/angular-form.component'
+import{ FormsModule } from '@angular/forms';
+import { ToggleelementComponent } from './toggleelement/toggleelement.component'
 
 @NgModule({
   declarations: [
@@ -15,11 +19,15 @@ import { StyleBindingComponent } from './style-binding/style-binding.component'
     Test1Component,
     IfelsecheckComponent,
     CompofloopComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    HeaderComponent,
+    AngularFormComponent,
+    ToggleelementComponent
   ],
   imports: [
     BrowserModule,
-    UserAuthModule
+    UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

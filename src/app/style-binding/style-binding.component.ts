@@ -15,4 +15,9 @@ export class StyleBindingComponent  {
     this.color="skyblue";
     this.bgColor="white";
   }
+
+  updateColor2() {
+    this.color="orange";
+    this.bgColor = "black";
+  }
 }
