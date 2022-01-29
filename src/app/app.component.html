@@ -1,3 +1,6 @@
+<header>
+  <script src="https://kit.fontawesome.com/dd9c93c5b3.js" crossorigin="anonymous"></script>
+</header>
 <app-header></app-header>
 <H1>Test {{title}}</H1>
 <app-login></app-login>
@@ -24,16 +27,21 @@
 
 <input type="text" #namebox placeholder="Enter Name:" name="username" value="Please Enter"/>
 
-<Button (click)="getname(namebox.value || namebox.defaultValue)" >Click Me to Get Value!</Button>
+<Button (click)="getname(namebox.value || namebox.defaultValue)">Click Me to Get Value!</Button>
 <h1> Box Value is {{displayName}} </h1>
 <br>
 
 <div class="counterDiv">
-<h1>Counter</h1>
-<button (click)="counterminus(displayvote)"  class="minusbtn">⬇⬇⬇⬇⬇⬇</button>
-<p>Likes Count :{{count}}</p>
-<p>Vote : {{displayvote}}</p>
-<button (click)="counterplus(displayvote)" class="plusbtn">⬆⬆⬆⬆⬆⬆⬆</button>
+  <h1>Counter</h1>
+  <button (click)="counterminus(displayvote)" class="btn btn-danger">
+    <mat-icon>swipe_up</mat-icon>
+  </button>
+  &nbsp;<button (click)="counterplus(displayvote)" class="btn btn-primary">
+  <mat-icon>swipe_down</mat-icon>
+</button>
+  <p>Likes Count :{{count}}</p>
+  <p>Vote : {{displayvote}}</p><br/>
+
 </div>
 <app-login></app-login>
 ------------------------------------------------------------------------------------------------------------------------
@@ -50,4 +58,27 @@
 ------------------------------------------------------------------------------------------------------------------------
 <app-angular-form></app-angular-form><br/>
 ------------------------------------------------------------------------------------------------------------------------
-<app-toggleelement></app-toggleelement>
+<app-toggleelement></app-toggleelement><br/>
+------------------------------------------------------------------------------------------------------------------------
+<app-bootsrapcomp></app-bootsrapcomp><br/>
+------------------------------------------------------------------------------------------------------------------------
+<app-meterialset></app-meterialset><br/>
+------------------------------------------------------------------------------------------------------------------------
+<app-todocomp></app-todocomp><br/>
+------------------------------------------------------------------------------------------------------------------------
+<app-child [item]="data"></app-child>
+<button (click)="updateDta()" class="btn btn-danger">Update Child Component
+  <span class="material-icons">
+swipe_down
+  </span>
+</button><br/><br/>
+------------------------------------------------------------------------------------------------------------------------
+<br/>
+User Details Component<br/><br/><br/>
+<ul *ngFor="let user of userDetails">
+  <app-userdetails [item]="user"></app-userdetails>
+</ul>
+
+
+
+

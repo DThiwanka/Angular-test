@@ -1,0 +1,17 @@
+<p>todocomp works!</p>
+<div class="input-group p-3">
+  <input type="text" class="form-control" #task placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" required pattern="A*">
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button" (click)="addTask(task.value)">ADD</button>
+  </div>
+</div>
+
+<br/>
+
+<div class="alert alert-danger" role="alert">
+    <table style="border-color: black" *ngFor="let value of value" >
+      <td>{{value.id}} : {{value.name}}</td>
+      <td><button class="btn btn-danger" (click)="removeTask(value.id)">Delete</button></td>
+    </table>
+</div>
+

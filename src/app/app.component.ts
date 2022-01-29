@@ -10,6 +10,7 @@ export class AppComponent {
   displayName = '';
   displayvote = '';
   count = 0;
+  data = 5;
 
   getName(name:string){
     alert(name)
@@ -56,5 +57,18 @@ export class AppComponent {
     vote="Downvoted";
     this.displayvote=vote;
   }
+
+  updateDta() {
+    this.data=Math.floor(Math.random()*10);
+    console.warn(this.data)
+  }
+
+  userDetails=[
+    {name:'Dulaj',email:'dthiwanka@grabmail.club',password:'RSg-uVafSM-N36A'},
+    {name:'Thiwanka',email:'Thiwanka@grabmail.club',password:'RTS-09-rrtes'},
+    {name:'Jayawardana',email:'Jayawardana@grabmail.club',password:'OIOP-ihht-123'},
+    {name:'TestName1',email:'TestName1@grabmail.club',password:'Test-pass-223'},
+    {name:'TestName2',email:'TestName2@grabmail.club',password:'Test-pass-224'}
+  ]
 
 }
