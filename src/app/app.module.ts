@@ -27,6 +27,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import { TodocompComponent } from './todocomp/todocomp.component';
 import { ChildComponent } from './child/child.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     MeterialsetComponent,
     TodocompComponent,
     ChildComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

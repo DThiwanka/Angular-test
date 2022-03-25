@@ -68,7 +68,10 @@ export class AppComponent {
     {name:'Thiwanka',email:'Thiwanka@grabmail.club',password:'RTS-09-rrtes'},
     {name:'Jayawardana',email:'Jayawardana@grabmail.club',password:'OIOP-ihht-123'},
     {name:'TestName1',email:'TestName1@grabmail.club',password:'Test-pass-223'},
-    {name:'TestName2',email:'TestName2@grabmail.club',password:'Test-pass-224'}
+    {name:'TestName2',email:'TestName2@grabmail.club',password:'Test-pass-224'},
+    {name:'TestName3',email:'TestName3@grabmail.club',password:'Test-pass-w67867'},
+    {name:'TestName4',email:'TestName4@grabmail.club',password:'Test-pass-435345'},
+    {name:'TestName5',email:'TestName5@grabmail.club',password:'Test-pass-45645'}
   ]
 
 }
